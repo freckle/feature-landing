@@ -2,7 +2,8 @@
   <meta charset="utf-8">
   <title>Inquiry-Based Lessons</title>
   <meta name="generator" content="Google Web Designer 1.5.1.1118">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Didact+Gothic" rel="stylesheet" type="text/css">
+  <meta data-template-name="gwd-IBL">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans+Std:400,700|Didact+Gothic" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <style type="text/css" id="gwd-text-style">
@@ -11,13 +12,11 @@
     }
     h1 {
       margin: 0px;
+      font-size: 48px;
     }
     h2 {
       margin: 0px;
-      left: 278px;
-      top: 626px;
-      transform: translate3d(0px, 262px, 0px);
-      transform-style: preserve-3d;
+      font-size: 30px;
     }
     h3 {
       margin: 0px;
@@ -25,7 +24,10 @@
   </style>
   <style type="text/css">
     h1, h2 {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Josefin Sans Std', sans-serif;
+    }
+    .header-block {
+      margin-top: 20vw;
     }
     html, body {
       width: 100%;
@@ -40,17 +42,18 @@
       background-color: transparent;
     }
     .gwd-header-a2eo {
-      height: calc(100vw/1.8);
+      height: 480px;
+      background-repeat: no-repeat;
       color: white;
       text-align: center;
       background-image: url("assets/ibl_background_resize.png");
-      background-size: 100%;
+      background-size: 100% 100%;
     }
     nav {
       text-align: left;
     }
     aside {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Josefin Sans Std', sans-serif;
       font-size: x-large;
       color: white;
       text-align: center;
@@ -59,17 +62,20 @@
     }
     input[type="submit"] {
       background-color: rgb(238, 95, 100);
+      font-size: 18px;
     }
     form {
       padding: 1em;
     }
     form > input {
-      padding: 0.2em 0.5em;
+      padding: 0.5em 0.5em;
       border-radius: 8px;
     }
     input[type="email"] {
       color: rgb(53, 79, 88);
       background-color: rgb(247, 247, 247);
+      font-size: 18px;
+      width: 400px;
     }
     section {
       width: 800px;
@@ -90,7 +96,8 @@
       text-align: center;
     }
     .icon-flow figure > figcaption {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Josefin Sans Std', sans-serif;
+      font-size: 18px;
     }
     .icon-flow img {
       height: 120px;
@@ -104,7 +111,7 @@
       position: absolute;
     }
     .quote-left, .quote-right {
-      height: 170px;
+      height: 130px;
       margin-right: auto;
       margin-left: auto;
       width: 95%;
@@ -113,14 +120,14 @@
       background-color: rgb(247, 247, 247);
     }
     .quote-left {
-      margin-right: -30px;
+      margin-right: -80px;
     }
     .quote-right {
-      margin-left: -30px;
+      margin-left: -80px;
     }
     .quote-left > img, .quote-right > img {
-      height: 170px;
-      width: 170px;
+      height: 130px;
+      width: 130px;
     }
     .quote-left > img {
       float: left;
@@ -136,6 +143,8 @@
     }
     blockquote > footer {
       font-size: medium;
+      text-align: right;
+      margin-bottom: 2em;
     }
     .chalkboard {
       width: 600px;
@@ -163,7 +172,7 @@
     .steps > div::before {
       content: counter(decimal)")";
       counter-increment: decimal 1;
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Josefin Sans Std', sans-serif;
       font-size: xx-large;
     }
     .steps > div > * {
@@ -189,13 +198,13 @@
     }
     .standards > li > div {
       display: inline-block;
-      width: 300px;
-      padding: 0px 1em 1em;
+      width: 330px;
+      padding: 0px 1em 2em;
       vertical-align: top;
     }
     .standards {
       list-style-image: url("assets/check_mark.png");
-      width: 650px;
+      width: 710px;
       margin: 0px auto;
     }
     .down-arrow {}.gwd-img-r89k {
@@ -223,7 +232,7 @@
     }
     .figures {
       width: 700px;
-      margin: 0px auto;
+      margin: auto auto;
     }
     .steps > div {
       margin-bottom: 6em;
@@ -231,10 +240,6 @@
     .logos {
       width: 710px;
       margin: 0px auto;
-    }
-    .gwd-h1-1nek {
-      transform: translate3d(0px, 262px, 0px);
-      transform-style: preserve-3d;
     }
   </style>
   <script type="text/javascript">
@@ -246,46 +251,64 @@
           var email = evt.target.previousElementSibling.value;
           var request = new XMLHttpRequest();
           request.open('POST', 'https://api.frontrowed.com/2/ibl-guide', true);
-          request.send(JSON.stringify({email: email}));
+          request.send(JSON.stringify({
+            email: email
+          }));
           fbq('track', 'Lead');
           window.location = "/ibl-guide.pdf";
         })
       });
     });
   </script>
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '735091749957015');
+    fbq('track', "PageView");
+  </script>
+  <noscript></noscript>
+<script id="gwd-template-data" type="text/x-gwd-template">{"label":"IBL","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449026677000"},"thumbnail":"IBL_thumb.png"}</script></head>
 
-fbq('init', '735091749957015');
-fbq('track', "PageView");</script>
-<noscript></noscript><script id="gwd-template-data" type="text/x-gwd-template">{"label":"IBL","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449016402000"},"thumbnail":"IBL_thumb.png"}</script></head><body><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=735091749957015&amp;ev=PageView&amp;noscript=1">
-<!-- End Facebook Pixel Code -->
-  
-
-
-
+<body>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=735091749957015&amp;ev=PageView&amp;noscript=1">
+  <!-- End Facebook Pixel Code -->
   <header class="gwd-header-a2eo">
     <nav>
       <a href="https://www.frontrowed.com">
         <img src="assets/Logo.png">
       </a>
     </nav>
-    <h1 class="gwd-h1-1w5i gwd-h1-1nek">
-      Inquiry-Based Lessons
-    </h1>
-    <h2 style="">
-      Engage your students in math discovery
-    </h2>
+    <div class="header-block">
+      <h1 class="gwd-h1-1w5i gwd-h1-1nek">
+        Project-Based Lessons
+      </h1>
+      <h2 style="">
+        Engage your students in math discovery
+      </h2>
+    </div>
   </header>
   <article class="" style="">
     <aside>
-      Get a how-to guide for using Inquiry-Based lessons in your classroom
+      <h2>
+        Get a how-to guide for using Project-Based lessons in your classroom
+      </h2>
       <form>
         <input type="email" placeholder="Enter your email">
         <input type="submit" value="Request Guide">
@@ -346,7 +369,9 @@ fbq('track', "PageView");</script>
       </div>
     </section>
     <aside>
-      See what teachers are raving about
+      <h2>
+        See what teachers are raving about
+      </h2>
       <form>
         <input type="email" placeholder="Enter your email">
         <input type="submit" value="Request Guide">
@@ -407,7 +432,9 @@ fbq('track', "PageView");</script>
       </div>
     </section>
     <aside>
-      Learn how to do a lesson in your classroom
+      <h2>
+        Learn how to do a lesson in your classroom
+      </h2>
       <form>
         <input type="email" placeholder="Enter your email">
         <input type="submit" value="Request Guide">
@@ -416,7 +443,7 @@ fbq('track', "PageView");</script>
     <section>
       <h1>How lessons align to the Mathematical Practice Standards...</h1>
       <p>
-        Through Front Row's lessons, students:
+        As students work through Front Row's Inquiry-Based Lessons, they learn to:
       </p>
       <ul class="standards">
         <li>
@@ -432,7 +459,7 @@ fbq('track', "PageView");</script>
             Reason abstractly and quantitatively…
           </div>
           <div>
-            …when discovering what questions to ask in the lesson and how best to answer them
+            …when deciding which questions to ask and the specific steps it takes to answer them
           </div>
         </li>
         <li>
@@ -464,7 +491,7 @@ fbq('track', "PageView");</script>
             Attend to precision…
           </div>
           <div>
-            …when discovering what questions to ask in the lesson and how best to answer them
+            …by working through multi-step problems that build on each step
           </div>
         </li>
         <li>
@@ -480,13 +507,15 @@ fbq('track', "PageView");</script>
             Look for and express regularity in repeated reasoning…
           </div>
           <div>
-            …when discovering what questions to ask in the lesson and how best to answer them
+            …as they work through multiple lessons and discover patterns in solving inquiries
           </div>
         </li>
       </ul>
     </section>
     <aside>
-      Find a lesson for your classroom today
+      <h2>
+        Find a lesson for your classroom today
+      </h2>
       <form>
         <input type="email" placeholder="Enter your email">
         <input type="submit" value="Request Guide">
@@ -496,12 +525,24 @@ fbq('track', "PageView");</script>
   <footer>
     <h1>Read more about Front Row in...</h1>
     <div class="logos">
-      <a href="http://blogs.wsj.com/venturecapital/2015/08/12/front-row-education-books-5-3-million-to-help-students-master-math/"><img class="square" src="assets/wallstreetjournal.png" style=""></a>
-      <a href="http://money.cnn.com/2015/09/10/smallbusiness/front-row-math-education/index.html"><img class="cnn" src="assets/cnn.png" style=""></a>
-      <a href="http://blogs.edweek.org/edweek/the_startup_blog/2015/09/using_ed-tech_for_personalized_adaptive_and_differentiated_learning_changes_teaching.html"><img class="square" src="assets/edweek.png" style=""></a>
-      <a href="http://qz.com/87464/these-two-charts-make-the-case-for-ipads-in-every-classroom/"><img class="square" src="assets/quartz.jpg" style=""></a>
-      <a href="http://www.nasdaq.com/video/what-is-advanced-elementary--517826763"><img class="nasdaq" src="assets/nasdaq.png" style=""></a>
-      <a href="https://www.edsurge.com/n/2013-05-14-how-to-conduct-a-successful-classroom-pilot"><img class="square" src="assets/edsurge.jpg" style=""></a>
+      <a href="http://blogs.wsj.com/venturecapital/2015/08/12/front-row-education-books-5-3-million-to-help-students-master-math/">
+        <img class="square" src="assets/wallstreetjournal.png" style="">
+      </a>
+      <a href="http://money.cnn.com/2015/09/10/smallbusiness/front-row-math-education/index.html">
+        <img class="cnn" src="assets/cnn.png" style="">
+      </a>
+      <a href="http://blogs.edweek.org/edweek/the_startup_blog/2015/09/using_ed-tech_for_personalized_adaptive_and_differentiated_learning_changes_teaching.html">
+        <img class="square" src="assets/edweek.png" style="">
+      </a>
+      <a href="http://qz.com/87464/these-two-charts-make-the-case-for-ipads-in-every-classroom/">
+        <img class="square" src="assets/quartz.jpg" style="">
+      </a>
+      <a href="http://www.nasdaq.com/video/what-is-advanced-elementary--517826763">
+        <img class="nasdaq" src="assets/nasdaq.png" style="">
+      </a>
+      <a href="https://www.edsurge.com/n/2013-05-14-how-to-conduct-a-successful-classroom-pilot">
+        <img class="square" src="assets/edsurge.jpg" style="">
+      </a>
     </div>
   </footer>
 

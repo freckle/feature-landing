@@ -1,0 +1,7 @@
+- In Google Web Designer, use `File > New from template`
+- Select `IBL` in `My templates`
+- Edit as desired
+- When satisfied, `File > Publish > Publish locally`
+- Make sure to uncheck `Flatten Files` and to check `Minify`
+- Name according to desired URL in `output` folder
+- Publish

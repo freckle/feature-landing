@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl96f2104807daec8b6c29f0a501035ddb"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl544b021d5296a8c059cfc24b84d2da94"/>
   <meta charset="utf-8">
   <title>Inquiry-Based Lessons</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
@@ -17,9 +17,10 @@
           evt.preventDefault();
           var email = evt.target.previousElementSibling.value;
           var request = new XMLHttpRequest();
-          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email?file=ibl-guide.pdf', true);
+          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email', true);
           request.send(JSON.stringify({
-            email: email
+            email: email,
+            file: 'ibl-guide.pdf'
           }));
           fbq('track', 'Lead');
           window.location = "/email-sent.html";

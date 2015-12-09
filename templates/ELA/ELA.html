@@ -257,14 +257,15 @@
           evt.preventDefault();
           var email = evt.target.previousElementSibling.value;
           var request = new XMLHttpRequest();
-          request.open('POST', 'https://api.frontrowed.com/2/ibl-guide', true);
+          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email', true);
           request.send(JSON.stringify({
-            email: email
+            email: email,
+            file: 'sample-articles.pdf'
           }));
           fbq('track', 'Lead');
-          window.location = "/ibl-guide.pdf";
+          window.location = "/email-sent.html";
         })
-      });
+      })
     });
   </script>
   <script>
@@ -291,7 +292,7 @@
     fbq('track', "PageView");
   </script>
   <noscript></noscript>
-<script id="gwd-template-data" type="text/x-gwd-template">{"label":"ELA","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449533586000"},"thumbnail":"ELA_thumb.png"}</script></head>
+<script id="gwd-template-data" type="text/x-gwd-template">{"label":"ELA","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449621208000"},"thumbnail":"ELA_thumb.png"}</script></head>
 
 <body>
   <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=735091749957015&amp;ev=PageView&amp;noscript=1">
@@ -345,7 +346,7 @@
     <section>
       <h1>What teachers are saying...</h1>
       <div class="quote-left">
-        <img src="assets/lori_murray.png">
+        <img src="assets/rakel_brandt.png">
         <blockquote>
           The automatically suggested level is a great tool that saves me much time and helps to increase the confidence of my students. They are all able to participate in subsequent discussion without feeling “less able” than other students.
           <div class="quote-name">
@@ -355,7 +356,7 @@
         </blockquote>
       </div>
       <div class="quote-right">
-        <img src="assets/lori_murray.png">
+        <img src="assets/kelly_morgan.png">
         <blockquote>
           The reports in ELA are great. I am able to at a quick glance, see which questions I needed to specifically go over and with which students.
           <div class="quote-name">
@@ -397,18 +398,17 @@
     <section style="">
       <h1>What Front Row ELA looks like...</h1>
       <p>
-        ELA articles cover a broad spectrum of non-fiction topics and many are cross-curricular across Science and Social Studies standards, ranging from Hurricanes to Donuts, providing engaging content for all students. Each article is automatically adjusted
-        for each student's reading level that the teacher has the ability to change if need be.
+        ELA articles cover a broad spectrum of non-fiction topics ranging from Hurricanes to Donuts, providing engaging content for all students. Many articles are cross-curricular with various Social Studies and Science standards as well.
       </p>
       <div class="steps" style="">
         <div style="">
           <img class="inline ray" src="assets/ray.png" style="">
           <div class="block-paras ray-text" style="">
             <p>
-              <strong>Students take a diagnostic to determine their current reading level</strong>
+              <strong>Students take a starting diagnostic</strong>
             </p>
             <p>
-              The diagnostic identifies student strengths and weaknesses to ensure that each student recevies articles tailored to their reading level. As students continue to practice, Front Row automatically adjusts student levels.
+              The diagnostic identifies student strengths and weaknesses to ensure that everyone recevies articles tailored to their reading level. As students continue to practice, Front Row automatically adjusts reading levels.
             </p>
           </div>
         </div>

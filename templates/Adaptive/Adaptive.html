@@ -1,6 +1,6 @@
 <html><head>
   <meta charset="utf-8">
-  <title>Inquiry-Based Lessons</title>
+  <title>Front Row adaptive practice</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
   <meta data-template-name="gwd-IBL">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Didact+Gothic" rel="stylesheet" type="text/css">
@@ -25,7 +25,6 @@
   <style type="text/css">
     h1, h2 {
       font-family: 'Josefin Sans', sans-serif;
-      font-weight: 300;
     }
     .header-block {
       margin-top: 20vw;
@@ -258,12 +257,13 @@
           evt.preventDefault();
           var email = evt.target.previousElementSibling.value;
           var request = new XMLHttpRequest();
-          request.open('POST', 'https://api.frontrowed.com/2/ibl-guide', true);
+          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email', true);
           request.send(JSON.stringify({
-            email: email
+            email: email,
+            file: 'adaptive-guide.pdf'
           }));
           fbq('track', 'Lead');
-          window.location = "/ibl-guide.pdf";
+          window.location = "/email-sent.html";
         })
       });
     });
@@ -292,7 +292,7 @@
     fbq('track', "PageView");
   </script>
   <noscript></noscript>
-<script id="gwd-template-data" type="text/x-gwd-template">{"label":"Adaptive","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449192052000"},"thumbnail":"Adaptive_thumb.png"}</script></head>
+<script id="gwd-template-data" type="text/x-gwd-template">{"label":"Adaptive","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449621183000"},"thumbnail":"Adaptive_thumb.png"}</script></head>
 
 <body>
   <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=735091749957015&amp;ev=PageView&amp;noscript=1">
@@ -346,7 +346,7 @@
     <section>
       <h1>What teachers are saying...</h1>
       <div class="quote-left">
-        <img src="assets/lori_murray.png">
+        <img src="assets/mitch_coley.png">
         <blockquote>
           Students see the value in progressing through the adaptive practice because they know that each session completed represents growth, and therefore success.
           <br>
@@ -502,6 +502,14 @@
           </div>
           <div>
             …through read-aloud, online manipulatives, and Spanish options
+          </div>
+        </li>
+        <li>
+          <div>
+            Prepare for standardized tests...
+          </div>
+          <div>
+            ...by answering questions in the format seen in the major tests
           </div>
         </li>
       </ul>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJldd25434d67c8ce40146934062b78a0a4"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl8be781776d4f67912336d50398af8d6a"/>
   <meta charset="utf-8">
   <title>Front Row ELA</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
@@ -17,9 +17,10 @@
           evt.preventDefault();
           var email = evt.target.previousElementSibling.value;
           var request = new XMLHttpRequest();
-          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email?file=sample-articles.pdf', true);
+          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email', true);
           request.send(JSON.stringify({
-            email: email
+            email: email,
+            file: 'sample-articles.pdf'
           }));
           fbq('track', 'Lead');
           window.location = "/email-sent.html";
@@ -105,7 +106,7 @@
     <section>
       <h1>What teachers are saying...</h1>
       <div class="quote-left">
-        <img src="assets/lori_murray.png">
+        <img src="assets/rakel_brandt.png">
         <blockquote>
           The automatically suggested level is a great tool that saves me much time and helps to increase the confidence of my students. They are all able to participate in subsequent discussion without feeling “less able” than other students.
           <div class="quote-name">

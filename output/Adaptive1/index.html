@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl3377c9835fa27600ec2a6ff6ce83bf70"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJld357c158b123ee701d48c0465eeb9090"/>
   <meta charset="utf-8">
   <title>Front Row adaptive practice</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
@@ -17,9 +17,10 @@
           evt.preventDefault();
           var email = evt.target.previousElementSibling.value;
           var request = new XMLHttpRequest();
-          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email?file=ibl-guide.pdf', true);
+          request.open('POST', 'https://api.frontrowed.com/2/ad-landing-email', true);
           request.send(JSON.stringify({
-            email: email
+            email: email,
+            file: 'adaptive-guide.pdf'
           }));
           fbq('track', 'Lead');
           window.location = "/email-sent.html";
@@ -105,7 +106,7 @@
     <section>
       <h1>What teachers are saying...</h1>
       <div class="quote-left">
-        <img src="assets/lori_murray.png">
+        <img src="assets/mitch_coley.png">
         <blockquote>
           Students see the value in progressing through the adaptive practice because they know that each session completed represents growth, and therefore success.
           <br>
@@ -261,6 +262,14 @@
           </div>
           <div>
             …through read-aloud, online manipulatives, and Spanish options
+          </div>
+        </li>
+        <li>
+          <div>
+            Prepare for standardized tests...
+          </div>
+          <div>
+            ...by answering questions in the format seen in the major tests
           </div>
         </li>
       </ul>

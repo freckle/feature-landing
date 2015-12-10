@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl0d468e231f078a29ae857c4dd874c008"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJlc47f1a0fb6b5e0b028d5895b9866b5f5"/>
   <meta charset="utf-8">
   <title>Front Row Benchmark Assessments</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
@@ -22,8 +22,10 @@
             email: email,
             file: 'assessment-guide.pdf'
           }));
-          fbq('track', 'Lead');
-          window.location = "/email-sent.html";
+          request.onload = function() {
+            fbq('track', 'Lead');
+            window.location = "/email-sent.html";
+          }
         })
       });
     });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJld357c158b123ee701d48c0465eeb9090"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJld19e69fd417b361f72314e95b1b39eeb"/>
   <meta charset="utf-8">
   <title>Front Row adaptive practice</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
@@ -22,8 +22,10 @@
             email: email,
             file: 'adaptive-guide.pdf'
           }));
-          fbq('track', 'Lead');
-          window.location = "/email-sent.html";
+          request.onload = function() {
+            fbq('track', 'Lead');
+            window.location = "/email-sent.html";
+          }
         })
       });
     });
@@ -128,7 +130,7 @@
         </blockquote>
       </div>
       <div class="quote-left">
-        <img src="assets/lori_murray.png">
+        <img src="assets/julie_brackx.png">
         <blockquote>
           Front Row is great. It allows each student to work on math topics at their level and on topics they need help on. It ties in nicely with our district math program and provides extra support where needed.
           <div class="quote-name">
@@ -153,8 +155,8 @@
         <img class="chalkboard" src="assets/Chalkboard.png">
       </div>
       <p>
-        In a typical classroom, there are teachers who are both ahead and behind grade level. The traditional method of teaching every student the same lesson plan means some students are left confused while others are not intellectually challenged. Front Row's
-        personalized program reaches every student where they are, insuring that they are both engaged and challenged.
+        In a typical classroom, some students are too advanced for the material being taught while others are struggling to keep up. The traditional method of teaching every student the same lesson plan means some students are left confused while others are left
+        bored. Front Row's personalized program reaches every student where they are, insuring that they are both engaged and challenged.
       </p>
     </section>
     <section style="">
@@ -229,7 +231,7 @@
             Learn to collaborate and help their peers…
           </div>
           <div>
-            …as they get stuck and Front Row suggests classmates who can help
+            …as Front Row suggests classmates who can help when they get stuck
           </div>
         </li>
         <li>

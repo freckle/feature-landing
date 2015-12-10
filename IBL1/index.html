@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl544b021d5296a8c059cfc24b84d2da94"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl4a29ba37c0bdba9f1265a7c569f237e0"/>
   <meta charset="utf-8">
   <title>Inquiry-Based Lessons</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
@@ -22,8 +22,10 @@
             email: email,
             file: 'ibl-guide.pdf'
           }));
-          fbq('track', 'Lead');
-          window.location = "/email-sent.html";
+          request.onload = function() {
+            fbq('track', 'Lead');
+            window.location = "/email-sent.html";
+          }
         })
       });
     });

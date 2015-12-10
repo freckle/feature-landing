@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl8ca32d929193b60aa4cbee973f9c7e1e"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJlc190cc07927b127569b752a86cb3d9f0"/>
   <meta charset="utf-8">
   <title>Front Row Assigned Practice</title>
   <meta name="generator" content="Google Web Designer 1.5.2.1202">
@@ -22,8 +22,10 @@
             email: email,
             file: 'assigned-guide.pdf'
           }));
-          fbq('track', 'Lead');
-          window.location = "/email-sent.html";
+          request.onload = function() {
+            fbq('track', 'Lead');
+            window.location = "/email-sent.html";
+          }
         })
       });
     });

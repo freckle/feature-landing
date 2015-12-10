@@ -259,8 +259,10 @@
             email: email,
             file: 'ibl-guide.pdf'
           }));
-          fbq('track', 'Lead');
-          window.location = "/email-sent.html";
+          request.onload = function() {
+            fbq('track', 'Lead');
+            window.location = "/email-sent.html";
+          }
         })
       });
     });
@@ -285,14 +287,14 @@
     }(window,
       document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '735091749957015');
+    fbq('init', '962839793774182');
     fbq('track', "PageView");
   </script>
   <noscript></noscript>
-<script id="gwd-template-data" type="text/x-gwd-template">{"label":"IBL","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449621167000"},"thumbnail":"IBL_thumb.png"}</script></head>
+<script id="gwd-template-data" type="text/x-gwd-template">{"label":"IBL","ad_data":{"ad_types":[],"platforms":[],"networks":[],"features":[],"verticals":[]},"usage_data":{"creation_time_ms":"1449765495000"},"thumbnail":"IBL_thumb.png"}</script></head>
 
 <body>
-  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=735091749957015&amp;ev=PageView&amp;noscript=1">
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=962839793774182&amp;ev=PageView&amp;noscript=1">
   <!-- End Facebook Pixel Code -->
   <header class="gwd-header-a2eo">
     <nav>
@@ -430,7 +432,7 @@
             </p>
             <p>
               After working in groups, a representative from each is given the chance to present their findings. Each student is encouraged to engage, thoughtfully explaining why they agree or disagree with the presenter. This presentation builds students’ public speaking
-              and explaining skills as well as serving as an opportunity for the
+              and explaining skills as well as serving as an opportunity for the class to collaborate in math learning.
             </p>
           </div>
         </div>

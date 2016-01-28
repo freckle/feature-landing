@@ -501,7 +501,7 @@ border-color: #333 transparent transparent transparent;
 
 	.btn-default:hover, .btn-alternate:hover {
 		border-color: #3b3e43;
-		background-color: #bca480; 
+		background-color: #3b3e43; 
 		color: #fff;
 	}
 

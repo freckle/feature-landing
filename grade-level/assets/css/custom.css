@@ -461,12 +461,12 @@ border-color: #333 transparent transparent transparent;
 				transition: all 0.2s;
 	}
 	
-	.btn:hover:after {
+	.no-touch .btn:hover:after {
 		width: 101%; 
 		opacity: 1; 
 	}
 	
-	.btn:hover {
+	.no-touch .btn:hover {
 		background-color: transparent; 
 	}
 	

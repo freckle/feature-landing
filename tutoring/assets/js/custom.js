@@ -4,6 +4,33 @@
  *
  */
 
+// Language localization
+function localize_language() {
+	var lang = navigator.languages[0]
+	if (lang !== undefined) {
+		lang.replace(/-.*/, "")
+		if (lang === "fil") {
+			lang = "tl";
+		}
+		console.log(lang)
+		switch (lang) {
+			case "en":
+				translatedString = "English tutoring from American teachers";
+				break;
+			case "tl":
+				translatedString = "English tutoring mula sa American guro";
+				break;
+			case "id":
+				translatedString = "les bahasa Inggris dari guru Amerika";
+				break;
+			default:
+				translatedString = "English tutoring from American teachers";
+		}
+		console.log(translatedString);
+		$('.translate-header').text(translatedString);
+	}
+}
+
 (function($){
 	
 	"use strict";
@@ -493,6 +520,9 @@ $(function() {
 	
 	// DOCUMENT READY //
 	$(document).ready(function(){
+
+		// Localize language
+		localize_language();
 		
 		// STICKY //
 		sticky();

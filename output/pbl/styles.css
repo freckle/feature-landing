@@ -1,0 +1,156 @@
+/*/* begin reset styles - delete if we have already! */ 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+/* end reset styles */ 
+
+
+/* repeat styles main-vflVPLgbQ.css */
+
+body {
+  background: #F4F6F6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.full-width {
+  width: 100%;
+  min-width: 1024px;
+}
+
+.container {
+  width: 700px !important;
+  max-width: none !important;
+  min-width: 700px;
+}
+
+#content {
+  margin-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 700px;
+  filter: none;
+  padding: 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.main-video {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+
+.video {
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.white-section {
+  background:white;
+  border-radius:5px;
+  padding:25px;
+}
+
+.bottom-shadow {
+  box-shadow: 0px 2px  #e6e6e6;
+}
+
+.video-title {
+  background:white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 25px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.center {
+  text-align: center;
+}
+.medium-padding {
+  padding: 25px;
+}
+
+.bordered-primary {
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.medium-top {
+    margin-top: 20px;
+}
+
+.medium-bottom {
+    margin-bottom: 20px;
+}
+
+.no-padding-lr {
+    padding-left: 0;
+    padding-right: 0;
+}
+.margin-r {
+  margin: 0 20px 0 0;
+}
+.no-margin-row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+h2, h3 {
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.small-top {
+  margin-top: 10px;
+}
+
+.main-navbar {
+    margin-bottom: 0;
+    min-height: 40px;
+    background: #032D4B;
+    border-radius: 0;
+    border: none;
+    padding: 0 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand {
+    line-height: 20px;
+    padding: 15px 15px 15px 0;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Comfortaa";
+}
+
+.main-navbar a {
+    color: #fff;
+    text-shadow: none;
+}
+
+.tab-content {
+  background-color: white;
+}
+
+.footer {
+  margin-top: 50px;
+}

@@ -7,244 +7,477 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <style type="text/css" id="gwd-text-style">
-    p {
-      margin: 0px;
-    }
-    h1 {
-      margin: 0px;
-      font-size: 48px;
-    }
-    h2 {
-      margin: 0px;
-      font-size: 30px;
-    }
-    h3 {
-      margin: 0px;
+    @media only screen and (min-device-width: 668px) {
+      p {
+        margin: 0px;
+      }
+      h1 {
+        margin: 0px;
+        font-size: 48px;
+      }
+      h2 {
+        margin: 0px;
+        font-size: 30px;
+      }
+      h3 {
+        margin: 0px;
+      }
     }
   </style>
   <style type="text/css">
-    h1, h2 {
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 300;
+    @media only screen and (min-device-width: 668px) {
+      h1, h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+      }
+      .header-block {
+        margin-top: 300px;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+      body {
+        transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transform-style: preserve-3d;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: medium;
+        background-color: transparent;
+      }
+      .gwd-header-a2eo {
+        height: 480px;
+        color: white;
+        text-align: center;
+        background-image: url("assets/ibl_background_resize.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-width: 1024px;
+      }
+      nav {
+        text-align: left;
+      }
+      aside {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: x-large;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        background-color: rgb(139, 208, 232);
+      }
+      input[type="submit"] {
+        font-size: 18px;
+        background-color: rgb(238, 95, 100);
+      }
+      form {
+        padding: 1em;
+      }
+      form > input {
+        padding: 0.5em;
+        border-radius: 8px;
+      }
+      input[type="email"] {
+        color: rgb(53, 79, 88);
+        font-size: 18px;
+        width: 400px;
+        background-color: rgb(247, 247, 247);
+      }
+      section {
+        width: 800px;
+        margin: 2em auto;
+      }
+      section > * {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+      section > h1, footer > h1 {
+        text-align: center;
+      }
+      footer {
+        padding: 2em 0px;
+      }
+      .icon-flow figure {
+        display: inline-block;
+        text-align: center;
+      }
+      .icon-flow figure > figcaption {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+      }
+      .icon-flow img {
+        height: 120px;
+        width: 120px;
+      }
+      .arrow {
+        font-size: 60px;
+        color: rgb(184, 233, 134);
+      }
+      .right-side-arrow, .left-side-arrow {
+        position: absolute;
+      }
+      .quote-left, .quote-right {
+        height: 130px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 95%;
+        margin-bottom: 4em;
+        box-shadow: rgb(204, 204, 204) 2px 3px 2px;
+        background-color: rgb(247, 247, 247);
+      }
+      .quote-left {
+        margin-right: -45px;
+      }
+      .quote-right {
+        margin-left: -45px;
+      }
+      .quote-left > img, .quote-right > img {
+        height: 130px;
+        width: 130px;
+      }
+      .quote-left > img {
+        float: left;
+        margin-right: 20px;
+      }
+      .quote-right > img {
+        float: right;
+        margin-left: 20px;
+      }
+      blockquote {
+        border-left-width: 0px;
+        font-size: medium;
+      }
+      blockquote > footer {
+        font-size: medium;
+        text-align: right;
+        margin-bottom: 2em;
+      }
+      .chalkboard {
+        width: 600px;
+      }
+      .center {
+        text-align: center;
+      }
+      .inline {
+        display: inline-block;
+      }
+      .ray {
+        height: 230px;
+      }
+      .whiteboards {
+        height: 230px;
+      }
+      .presenting {
+        height: 280px;
+      }
+      .steps {
+        counter-reset: decimal 0;
+        width: 750px;
+        margin: 0px auto;
+      }
+      .steps > div::before {
+        content: counter(decimal)")";
+        counter-increment: decimal 1;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: xx-large;
+      }
+      .steps > div > * {
+        vertical-align: top;
+      }
+      .block-paras > p {
+        margin-bottom: 1em;
+      }
+      .block-paras {
+        display: inline-block;
+      }
+      .ray-text {
+        margin-left: 1em;
+        width: 300px;
+      }
+      .whiteboards-text {
+        width: 330px;
+        margin-right: 1em;
+      }
+      .presenting-text {
+        width: 440px;
+        margin-left: 1em;
+      }
+      .standards > li > div {
+        display: inline-block;
+        width: 330px;
+        padding: 0px 1em 2em;
+        vertical-align: top;
+      }
+      .standards {
+        list-style-image: url("assets/check_mark.png");
+        width: 710px;
+        margin: 0px auto;
+      }
+      .down-arrow {}.gwd-img-r89k {
+        transform: translate3d(537px, -176px, 0px);
+        transform-style: preserve-3d;
+      }
+      .gwd-img-zwlg {
+        transform: translate3d(121px, -176px, 0px);
+        transform-style: preserve-3d;
+      }
+      footer img {
+        margin-left: 37px;
+      }
+      footer > h1 {
+        margin-bottom: 1em;
+      }
+      .cnn {
+        height: 35px;
+      }
+      .nasdaq {
+        height: 30px;
+      }
+      .square {
+        height: 60px;
+      }
+      .figures {
+        width: 700px;
+        margin: auto;
+      }
+      .steps > div {
+        margin-bottom: 6em;
+      }
+      .logos {
+        width: 710px;
+        margin: 0px auto;
+      }
     }
-    .header-block {
-      margin-top: 300px;
-    }
-    html, body {
-      width: 100%;
-      height: 100%;
-      margin: 0px;
-    }
-    body {
-      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-      transform-style: preserve-3d;
-      font-family: 'Didact Gothic', sans-serif;
-      font-size: medium;
-      background-color: transparent;
-    }
-    .gwd-header-a2eo {
-      height: 480px;
-      color: white;
-      text-align: center;
-      background-image: url("assets/ibl_background_resize.png");
-      background-size: 100%;
-      background-repeat: no-repeat;
-      min-width: 1024px;
-    }
-    nav {
-      text-align: left;
-    }
-    aside {
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 300;
-      font-size: x-large;
-      color: white;
-      text-align: center;
-      padding: 1em;
-      background-color: rgb(139, 208, 232);
-    }
-    input[type="submit"] {
-      font-size: 18px;
-      background-color: rgb(238, 95, 100);
-    }
-    form {
-      padding: 1em;
-    }
-    form > input {
-      padding: 0.5em;
-      border-radius: 8px;
-    }
-    input[type="email"] {
-      color: rgb(53, 79, 88);
-      font-size: 18px;
-      width: 400px;
-      background-color: rgb(247, 247, 247);
-    }
-    section {
-      width: 800px;
-      margin: 2em auto;
-    }
-    section > * {
-      margin-top: 1.5em;
-      margin-bottom: 1.5em;
-    }
-    section > h1, footer > h1 {
-      text-align: center;
-    }
-    footer {
-      padding: 2em 0px;
-    }
-    .icon-flow figure {
-      display: inline-block;
-      text-align: center;
-    }
-    .icon-flow figure > figcaption {
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 300;
-      font-size: 18px;
-    }
-    .icon-flow img {
-      height: 120px;
-      width: 120px;
-    }
-    .arrow {
-      font-size: 60px;
-      color: rgb(184, 233, 134);
-    }
-    .right-side-arrow, .left-side-arrow {
-      position: absolute;
-    }
-    .quote-left, .quote-right {
-      height: 130px;
-      margin-right: auto;
-      margin-left: auto;
-      width: 95%;
-      margin-bottom: 4em;
-      box-shadow: rgb(204, 204, 204) 2px 3px 2px;
-      background-color: rgb(247, 247, 247);
-    }
-    .quote-left {
-      margin-right: -45px;
-    }
-    .quote-right {
-      margin-left: -45px;
-    }
-    .quote-left > img, .quote-right > img {
-      height: 130px;
-      width: 130px;
-    }
-    .quote-left > img {
-      float: left;
-      margin-right: 20px;
-    }
-    .quote-right > img {
-      float: right;
-      margin-left: 20px;
-    }
-    blockquote {
-      border-left-width: 0px;
-      font-size: medium;
-    }
-    blockquote > footer {
-      font-size: medium;
-      text-align: right;
-      margin-bottom: 2em;
-    }
-    .chalkboard {
-      width: 600px;
-    }
-    .center {
-      text-align: center;
-    }
-    .inline {
-      display: inline-block;
-    }
-    .ray {
-      height: 230px;
-    }
-    .whiteboards {
-      height: 230px;
-    }
-    .presenting {
-      height: 280px;
-    }
-    .steps {
-      counter-reset: decimal 0;
-      width: 750px;
-      margin: 0px auto;
-    }
-    .steps > div::before {
-      content: counter(decimal)")";
-      counter-increment: decimal 1;
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 300;
-      font-size: xx-large;
-    }
-    .steps > div > * {
-      vertical-align: top;
-    }
-    .block-paras > p {
-      margin-bottom: 1em;
-    }
-    .block-paras {
-      display: inline-block;
-    }
-    .ray-text {
-      margin-left: 1em;
-      width: 300px;
-    }
-    .whiteboards-text {
-      width: 330px;
-      margin-right: 1em;
-    }
-    .presenting-text {
-      width: 440px;
-      margin-left: 1em;
-    }
-    .standards > li > div {
-      display: inline-block;
-      width: 330px;
-      padding: 0px 1em 2em;
-      vertical-align: top;
-    }
-    .standards {
-      list-style-image: url("assets/check_mark.png");
-      width: 710px;
-      margin: 0px auto;
-    }
-    .down-arrow {}.gwd-img-r89k {
-      transform: translate3d(537px, -176px, 0px);
-      transform-style: preserve-3d;
-    }
-    .gwd-img-zwlg {
-      transform: translate3d(121px, -176px, 0px);
-      transform-style: preserve-3d;
-    }
-    footer img {
-      margin-left: 37px;
-    }
-    footer > h1 {
-      margin-bottom: 1em;
-    }
-    .cnn {
-      height: 35px;
-    }
-    .nasdaq {
-      height: 30px;
-    }
-    .square {
-      height: 60px;
-    }
-    .figures {
-      width: 700px;
-      margin: auto;
-    }
-    .steps > div {
-      margin-bottom: 6em;
-    }
-    .logos {
-      width: 710px;
-      margin: 0px auto;
+    @media only screen and (max-device-width: 667px) {
+      h1, h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0px;
+      }
+      p {
+        margin: 0px;
+        font-size: 40px;
+      }
+      h1 {
+        font-size: 72px;
+      }
+      h2 {
+        font-size: 50px;
+      }
+      .header-block {
+        margin-top: 100px;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+      body {
+        transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transform-style: preserve-3d;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: medium;
+        background-color: transparent;
+      }
+      .gwd-header-a2eo {
+        min-height: 400px;
+        color: white;
+        text-align: center;
+        background-image: url("assets/ibl_background_resize.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      nav {
+        text-align: left;
+      }
+      aside {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: x-large;
+        color: black;
+        text-align: center;
+        padding: 1em;
+        background-color: rgb(139, 208, 232);
+      }
+      aside > h2 {
+        padding-top: 1em;
+      }
+      input[type="submit"] {
+        font-size: 50px;
+        display: block;
+        margin: auto;
+        width: 100%;
+        background-color: rgb(238, 95, 100);
+        color: white;
+        margin-bottom: 1em;
+      }
+      form {
+        padding: 1em;
+      }
+      form > input {
+        padding: 0.5em;
+        border-radius: 8px;
+      }
+      input[type="email"] {
+        color: rgb(53, 79, 88);
+        font-size: 50px;
+        width: 100%;
+        margin: auto auto 50px;
+        background-color: rgb(247, 247, 247);
+      }
+      section {
+        width: 800px;
+        margin: 2em auto;
+      }
+      section > * {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+      section > h1, footer > h1 {
+        text-align: center;
+      }
+      footer {
+        padding: 2em 0px;
+      }
+      .icon-flow figure {
+        display: block;
+        text-align: center;
+      }
+      .icon-flow figure > figcaption {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+      }
+      .icon-flow img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 50px;
+      }
+      .arrow {
+        display: none;
+      }
+      .right-side-arrow, .left-side-arrow {
+        display: none;
+      }
+      .quote-name {
+        padding: 0px;
+        text-align: right;
+      }
+      .quote-left, .quote-right {
+        height: 230px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        margin-bottom: 3em;
+        box-shadow: rgb(204, 204, 204) 2px 3px 2px;
+        background-color: rgb(247, 247, 247);
+      }
+      .quote-left > img, .quote-right > img {
+        height: 230px;
+        width: 230px;
+      }
+      .quote-left > img {
+        float: left;
+        margin-right: 20px;
+      }
+      .quote-right > img {
+        float: right;
+        margin-left: 20px;
+      }
+      blockquote {
+        border-left-width: 0px;
+        font-size: 23px;
+      }
+      blockquote > footer {
+        font-size: medium;
+        text-align: right;
+        margin-bottom: 2em;
+      }
+      .chalkboard {
+        width: 600px;
+      }
+      .center {
+        text-align: center;
+      }
+      .inline {
+        display: inline-block;
+      }
+      .ray, .whiteboards, .presenting {
+        display: block;
+        width: 100%;
+      }
+      .steps {
+        counter-reset: decimal 0;
+        width: 750px;
+        margin: 0px auto;
+      }
+      .steps > div::before {
+        content: counter(decimal)")";
+        counter-increment: decimal 1;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: xx-large;
+      }
+      .steps > div > * {
+        vertical-align: top;
+      }
+      .block-paras > p {
+        margin-bottom: 1em;
+      }
+      .block-paras {
+        display: inline-block;
+      }
+      .ray-text, .whiteboards-text, .presenting-text {
+        margin-left: 1em;
+        width: 100%;
+      }
+      .standards > li > div {
+        display: block;
+        width: 100%;
+        padding: 0px 1em 2em;
+        vertical-align: top;
+      }
+      .standards {
+        list-style-image: url("assets/check_mark.png");
+        width: 710px;
+        margin: 0px auto;
+        font-size: 40px;
+      }
+      .down-arrow {} .gwd-img-r89k {
+        transform: translate3d(537px, -176px, 0px);
+        transform-style: preserve-3d;
+      }
+      .gwd-img-zwlg {
+        transform: translate3d(121px, -176px, 0px);
+        transform-style: preserve-3d;
+      }
+      footer img {
+        margin-left: 37px;
+      }
+      footer > h1 {
+        margin-bottom: 1em;
+      }
+      .cnn {
+        height: 35px;
+      }
+      .nasdaq {
+        height: 30px;
+      }
+      .square {
+        height: 60px;
+      }
+      .figures {
+        width: 700px;
+        margin: auto;
+      }
+      .steps > div {
+        margin-bottom: 6em;
+      }
+      .logos {
+        width: 710px;
+        margin: 0px auto;
+      }
     }
   </style>
   <script type="text/javascript">

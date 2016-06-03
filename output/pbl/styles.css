@@ -183,9 +183,9 @@ h2, h3 {
 }
 
 .cta-btn {
-  height: 30px;
-  width: 150px;
-  font-size: 12px;
+  height: 50px;
+  width: 470px;
+  margin-top: 10px;
 }
 
 .footer {
@@ -194,14 +194,4 @@ h2, h3 {
   height: 75px;
   border-top: 1px solid black;
 }
-
-#sidebar.affix {
-    position: fixed;
-    top: 400px;
-    width: 220px;
-    right: 10px;
-    background-color: #FFE3CD;
-    border-radius: 10px;
-    font-size: 12px;
-  }
 

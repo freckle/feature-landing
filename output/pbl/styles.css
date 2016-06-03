@@ -91,6 +91,10 @@ body {
   margin-top: 40px;
 }
 
+.xl-bottom {
+  margin-bottom: 100px;
+}
+
 .medium-bottom {
     margin-bottom: 20px;
 }
@@ -178,6 +182,26 @@ h2, h3 {
   background-color: white;
 }
 
+.cta-btn {
+  height: 30px;
+  width: 150px;
+  font-size: 12px;
+}
+
 .footer {
   margin-top: 50px;
+  background:white;
+  height: 75px;
+  border-top: 1px solid black;
 }
+
+#sidebar.affix {
+    position: fixed;
+    top: 400px;
+    width: 220px;
+    right: 10px;
+    background-color: #FFE3CD;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+

@@ -1,0 +1,376 @@
+/*/* begin reset styles - delete if we have already! */ 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+/* end reset styles */ 
+
+
+/* repeat styles main-vflVPLgbQ.css */
+
+body {
+  background: #F4F6F6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.full-width {
+  width: 100%;
+  min-width: 1024px;
+}
+
+.container {
+  width: 995px !important;
+  max-width: none !important;
+  min-width: 995px;
+  /*margin-top: 50px;*/
+}
+
+#content {
+  margin-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 700px;
+  filter: none;
+  padding: 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.page-title {
+  line-height: 60px;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.bordered-primary {
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.medium-top {
+    margin-top: 20px;
+}
+
+.no-padding-lr {
+    padding-left: 0;
+    padding-right: 0;
+}
+.margin-r {
+  margin: 0 20px 0 0;
+}
+.no-margin-row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+h2, h3 {
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bold {
+    font-weight: 700;
+}
+
+.center-text {
+  text-align: center;
+}
+.small-top {
+  margin-top: 5px;
+}
+
+.main-navbar {
+    margin-bottom: 0;
+    min-height: 40px;
+    background: #032D4B;
+    border-radius: 0;
+    border: none;
+    padding: 0 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand {
+    line-height: 20px;
+    padding: 15px 15px 15px 0;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Comfortaa";
+}
+
+.main-navbar a {
+    color: #fff;
+    text-shadow: none;
+}
+
+.contents-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.first-item-circle, .item-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  display: inline-block;
+  background: lightgray;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.item-circle:before {
+  position: absolute;
+  border: 2px solid lightgray;
+  width: 0;
+  height: 55px;
+  display: block;
+  content: '';
+  left: 50%;
+  top: -45px;
+  margin-left: 4px;}
+
+.item-btn {
+  width: 140px;
+}
+
+.item-circle i, .first-item-circle i {
+  color: white;
+}
+
+.resource-list {
+  list-style: none;
+}
+
+.resource-list li {
+  margin-top: 10px;
+}
+
+.resource-list li:first-child {
+  margin-top: none;
+}
+
+.resource-item img{
+  height:50px;
+  margin: 10px;
+}
+
+.activity-inner {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.margin-tb {
+  margin: 15px 0;
+}
+
+.item-header {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.daily-icon {
+  border-radius: 50%;
+  background: rgba(128, 128, 128, 0.41);
+  width: 1.7em;
+  height: 1.7em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.item-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-left:20px;
+}
+
+.large-bottom {
+  margin-bottom: 20px;
+}
+
+.lesson-block {
+  background: white;
+  float: right;
+  position: relative;
+  left: -11%;
+  text-align: left;
+  padding: 0px 20px 10px 20px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 2px gray;
+  width: 71%;
+}
+
+.lesson-block p {
+  font-size: 12px;
+}
+
+.lesson-header {
+  float: right;
+  position: relative;
+  left: -11%;
+  text-align: left;
+  padding: 8px 12px;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 1px 1px 2px gray;
+  width: 71%;
+  height: 35px;
+  color: white;
+}
+
+#overview-header {
+  background: #032D4B;
+}
+
+#lesson-block-overview {
+  background-image: url('https://s3.amazonaws.com/classroom-assets/social-studies/lesson-image-overview.png');
+  background-size: 100% 100%;
+  color: white;
+}
+/* Lesson 1 and 7 and 13 */
+#lesson-header-1, #lesson-header-7, #lesson-header-13 {
+  background: #FEA248;
+}
+
+#lesson-block-1 h3, #lesson-block-1 h4,
+#lesson-block-7 h3, #lesson-block-7 h4,
+#lesson-block-13 h3, #lesson-block-13 h4 {
+  color: #FEA248;
+}
+
+/* Lesson 2 and 8 and 14 */
+#lesson-header-2, #lesson-header-8, #lesson-header-14 {
+  background: #54BF5F;
+}
+
+#lesson-block-2 h3, #lesson-block-2 h4,
+#lesson-block-8 h3, #lesson-block-8 h4,
+#lesson-block-14 h3, #lesson-block-14 h4 {
+  color: #54BF5F;
+}
+
+/* Lesson 3 and 9 and 15 */
+#lesson-header-3, #lesson-header-9, #lesson-header-15 {
+  background: #A978EF;
+}
+
+#lesson-block-3 h3, #lesson-block-3 h4,
+#lesson-block-9 h3, #lesson-block-9 h4,
+#lesson-block-15 h3, #lesson-block-15 h4 {
+  color: #A978EF;
+}
+
+/* Lesson 4 and 10 and 16 */
+#lesson-header-4, #lesson-header-10, #lesson-header-16 {
+  background: #F09781;
+}
+
+#lesson-block-4 h3, #lesson-block-4 h4,
+#lesson-block-10 h3, #lesson-block-10 h4,
+#lesson-block-16 h3, #lesson-block-16 h4 {
+  color: #F09781;
+}
+
+/* Lesson 5 and 11 and 17 */
+#lesson-header-5, #lesson-header-11, #lesson-header-17 {
+  background: #5470BF;
+}
+
+#lesson-block-5 h3, #lesson-block-5 h4,
+#lesson-block-11 h3, #lesson-block-11 h4,
+#lesson-block-17 h3, #lesson-block-17 h4 {
+  color: #5470BF;
+}
+
+/* Lesson 6 and 12 and 18 */
+#lesson-header-6, #lesson-header-12, #lesson-header-18 {
+  background: #45DDB3;
+}
+
+#lesson-block-6 h3, #lesson-block-6 h4,
+#lesson-block-12 h3, #lesson-block-12 h4,
+#lesson-block-18 h3, #lesson-block-18 h4 {
+  color: #45DDB3;
+}
+
+.lesson-time {
+  text-align: right;
+}
+
+.last-item {
+  padding-bottom: 50px;
+}
+
+.last-in-section {
+  border-bottom: none;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.side-title {
+  font-size: 24px;
+}
+
+.side-bar {
+  /*position: fixed;*/
+  width: 260px;
+}
+
+.table-of-contents {
+  background-color: #FFF;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.item-desc {
+  padding-right: 0px;
+}
+
+.last-item {
+  margin-bottom: 60px;
+}
+
+.share-links {
+  font-size: 16px;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  margin: 10px 0 10px -5px;
+}
+
+.share-links p {
+  display: inline-block;
+  color: gray;
+  margin-right: 10px;
+}
+

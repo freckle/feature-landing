@@ -255,6 +255,11 @@ h4 {
   background-size: 100% 100%;
   color: white;
 }
+
+/* General materials */
+#lesson-block-0 h3, #lesson-block-0 h4 {
+  color: #032D4B;
+}
 /* Lesson 1 and 7 and 13 */
 #lesson-header-1, #lesson-header-7, #lesson-header-13 {
   background: #FEA248;

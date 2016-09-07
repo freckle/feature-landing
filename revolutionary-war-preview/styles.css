@@ -217,6 +217,11 @@ h4 {
   margin-bottom: 20px;
 }
 
+.gray-out {
+  background-color: white;
+  opacity: 0.5;
+}
+
 .lesson-block {
   background: white;
   float: right;

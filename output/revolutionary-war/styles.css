@@ -221,7 +221,7 @@ h4 {
   background: white;
   float: right;
   position: relative;
-  left: -11%;
+  left: -15%;
   text-align: left;
   padding: 0px 20px 10px 20px;
   border-radius: 0px 0px 5px 5px;
@@ -236,7 +236,7 @@ h4 {
 .lesson-header {
   float: right;
   position: relative;
-  left: -11%;
+  left: -15%;
   text-align: left;
   padding: 8px 12px;
   border-radius: 5px 5px 0px 0px;
@@ -251,7 +251,7 @@ h4 {
 }
 
 #lesson-block-overview {
-  background-image: url('https://s3.amazonaws.com/classroom-assets/social-studies/lesson-image-overview.png');
+  background-image: url('https://s3.amazonaws.com/classroom-assets/social-studies/lesson-image-overview.jpg');
   background-size: 100% 100%;
   color: white;
 }

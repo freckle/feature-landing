@@ -153,6 +153,17 @@ h4 {
   top: -45px;
   margin-left: 4px;}
 
+.long-item-circle:before {
+  position: absolute;
+  border: 2px solid lightgray;
+  width: 0;
+  height: 80px;
+  display: block;
+  content: '';
+  left: 50%;
+  top: -45px;
+  margin-left: 4px;}
+
 .item-btn {
   width: 140px;
 }
@@ -275,7 +286,6 @@ h4 {
 #lesson-block-overview {
   background-image: url('https://s3.amazonaws.com/classroom-assets/social-studies/lesson-image-overview.jpg');
   background-size: 100% 100%;
-  color: white;
 }
 
 /* General materials */

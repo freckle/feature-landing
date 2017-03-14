@@ -50,6 +50,12 @@ body {
   font-weight: 300;
 }
 
+.page-subtitle {
+  line-height: 20px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
 .bordered-primary {
   border: 1px solid #CCC;
   border-radius: 4px;
@@ -78,7 +84,7 @@ h2, h3 {
 }
 
 h4 {
-  font-weight: 400;
+  font-weight: 350;
   font-size: 16px;
 }
 
@@ -270,7 +276,8 @@ h4 {
 }
 
 #overview-header {
-  background: #032D4B;
+  background: #D9EDF7;
+  color: #032D4B;
 }
 
 #lesson-block-overview {
